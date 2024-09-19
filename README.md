@@ -1,4 +1,4 @@
-Automated Ethereum Classic (ETC) Mining and Donation Script
+# Automated Ethereum Classic (ETC) Mining and Donation Script
 This Python script automates the process of:
 
 Creating a new Ethereum Classic wallet.
