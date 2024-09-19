@@ -1,41 +1,25 @@
 # Automated Ethereum Classic (ETC) Mining and Donation Script
 This Python script automates the process of:
 
-Creating a new Ethereum Classic wallet.
-Mining Ethereum Classic (ETC) using ethminer or compatible mining software.
-Automatically donating mined ETC to a specified charity wallet address.
-Table of Contents
-Overview
-How It Works
-Prerequisites
-Required Software and Libraries
-Setup Instructions
-Variables to Change
-Running the Script
-Important Notes and Warnings
-Explanation of the Script
-Imports and Dependencies
-Functions
-Main Execution Flow
-License
-Author
-Overview
+- Creating a new Ethereum Classic wallet.
+- Mining Ethereum Classic (ETC) using ethminer or compatible mining software.
+- Automatically donating mined ETC to a specified charity wallet address.
+
+## Overview
 This script is designed for individuals who wish to mine Ethereum Classic (ETC) and automatically donate the mined coins to a charitable cause. It simplifies the setup by handling wallet creation, mining initiation, and the transfer of funds to the charity's wallet.
 
-How It Works
-Wallet Creation: Generates a new Ethereum Classic wallet using the eth_account library. The wallet's address and private key are created programmatically.
+## How It Works
+- Wallet Creation: Generates a new Ethereum Classic wallet using the eth_account library. The wallet's address and private key are created programmatically.
+- Mining Initiation: Starts the mining process by connecting to a specified ETC mining pool using ethminer. The mining rewards are sent to the newly created wallet.
+- Automated Donation: Periodically checks the wallet's balance. When ETC is mined and available, the script automatically sends the balance (minus a small amount reserved for transaction fees) to the charity's wallet address.
 
-Mining Initiation: Starts the mining process by connecting to a specified ETC mining pool using ethminer. The mining rewards are sent to the newly created wallet.
-
-Automated Donation: Periodically checks the wallet's balance. When ETC is mined and available, the script automatically sends the balance (minus a small amount reserved for transaction fees) to the charity's wallet address.
-
-Prerequisites
-Operating System: Compatible with Windows, macOS, or Linux.
-Python 3.x: Ensure Python is installed on your system.
-Graphics Card (GPU): A powerful GPU is recommended for effective mining.
-Internet Connection: Required for mining and interacting with the blockchain.
-Required Software and Libraries
-Python Packages:
+## Prerequisites
+- Operating System: Compatible with Windows, macOS, or Linux.
+- Python 3.x: Ensure Python is installed on your system.
+- Graphics Card (GPU): A powerful GPU is recommended for effective mining.
+- Internet Connection: Required for mining and interacting with the blockchain.
+- Required Software and Libraries
+- Python Packages:
 
 bash
 Copy code
