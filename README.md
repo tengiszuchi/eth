@@ -1,5 +1,5 @@
 # Automated Ethereum Classic Mining and Donation
-This Python script automates the process of:
+This Python program automates the process of:
 
 - Creating a new Ethereum Classic wallet.
 - Mining Ethereum Classic (ETC) using ethminer or compatible mining software.
@@ -56,7 +56,7 @@ Adjust the gasPrice according to the current network conditions. A higher gas pr
 ```time.sleep(3600)  # Sleep for 1 hour```
 The script checks the wallet balance and attempts to send donations every hour. You can adjust the interval by changing the number of seconds in time.sleep().
 
-## Running the Script
+## Running the program
 - Ensure All Prerequisites Are Met:
 - Run the Script:
 ```python main.py```
