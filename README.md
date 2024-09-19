@@ -20,81 +20,43 @@ This script is designed for individuals who wish to mine Ethereum Classic (ETC) 
 - Internet Connection: Required for mining and interacting with the blockchain.
 - Required Software and Libraries
 - Python Packages:
-
-- ```pip install web3 eth-account```
+    - ```pip install web3 eth-account```
 - Ethminer:
+    - Download and install ```ethminer``` from the official repository.
 
-Download and install ethminer from the official repository.
-Setup Instructions
+## Setup Instructions
 Clone or Download the Script:
+- Save the script to a file named ```main.py```.
+- Install Required Python Packages:
+    - ```pip install web3 eth-account```
+- Install Ethminer
 
-Save the script to a file named mine_and_donate.py.
-
-Install Required Python Packages:
-
-bash
-Copy code
-pip install web3 eth-account
-Install Ethminer:
-
-Download ethminer suitable for your operating system.
-Follow the installation instructions provided in the repository.
-Variables to Change
+## Variables to Change
 Before running the script, you need to replace placeholder values with actual data:
 
-Mining Pool URL:
-
+- Mining Pool URL:
 Locate the following line in the script:
-
-python
-Copy code
-mining_pool_url = 'stratum+tcp://your.miningpool.url:port'
+```mining_pool_url = 'stratum+tcp://your.miningpool.url:port'```
 Replace 'stratum+tcp://your.miningpool.url:port' with the URL and port of your chosen Ethereum Classic mining pool.
-
-Example:
-
-python
-Copy code
-mining_pool_url = 'stratum+tcp://etc-eu1.nanopool.org:19999'
-Worker Name (Optional):
-
-python
-Copy code
-worker_name = 'worker1'
+- Worker Name (Optional):
+```worker_name = 'worker1'```
 You can change 'worker1' to any name you prefer for identifying your mining worker.
-Charity Wallet Address:
-
-python
-Copy code
-charity_address = '0xYourCharityWalletAddress'
+- Charity Wallet Address:
+```charity_address = '0xYourCharityWalletAddress'```
 Replace '0xYourCharityWalletAddress' with the actual Ethereum Classic (ETC) address of the charity to which you want to donate.
 Ensure that the address is valid and intended for ETC, not ETH.
-RPC Endpoint (Optional):
-
-python
-Copy code
-web3 = Web3(Web3.HTTPProvider('https://www.etcblockexplorer.com/api/eth_rpc'))
+- RPC Endpoint (Optional):
+```web3 = Web3(Web3.HTTPProvider('https://www.etcblockexplorer.com/api/eth_rpc'))```
 The script uses a public ETC RPC endpoint. You can replace it with another reliable RPC provider if needed.
-
-Example:
-
-python
-Copy code
-web3 = Web3(Web3.HTTPProvider('https://etc-geth.0xinfra.com'))
-Gas Price and Gas Limit (Optional):
-
-python
-Copy code
-'gas': 21000,
-'gasPrice': web3.toWei('0.00000002', 'ether'),
+- Gas Price and Gas Limit (Optional):
+```'gas': 21000,```
+```'gasPrice': web3.toWei('0.00000002', 'ether'),```
 Adjust the gasPrice according to the current network conditions. A higher gas price can result in faster transaction confirmations but will cost more.
-Donation Check Interval (Optional):
-
-python
-Copy code
-time.sleep(3600)  # Sleep for 1 hour
+- Donation Check Interval (Optional):
+```time.sleep(3600)  # Sleep for 1 hour```
 The script checks the wallet balance and attempts to send donations every hour. You can adjust the interval by changing the number of seconds in time.sleep().
-Running the Script
+
+## Running the Script
 Ensure All Prerequisites Are Met:
 
 Python and required packages are installed.
