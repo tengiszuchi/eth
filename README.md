@@ -1,4 +1,4 @@
-# Automated Ethereum Classic (ETC) Mining and Donation Script
+# Automated Ethereum Classic Mining and Donation
 This Python script automates the process of:
 
 - Creating a new Ethereum Classic wallet.
@@ -21,10 +21,8 @@ This script is designed for individuals who wish to mine Ethereum Classic (ETC) 
 - Required Software and Libraries
 - Python Packages:
 
-bash
-Copy code
-pip install web3 eth-account
-Ethminer:
+- ```pip install web3 eth-account```
+- Ethminer:
 
 Download and install ethminer from the official repository.
 Setup Instructions
