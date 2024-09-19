@@ -84,6 +84,10 @@ The script checks the wallet balance and attempts to send donations every hour. 
 - Ensure that the charity wallet address is correct and that the organization accepts donations in ETC.
 - Verify the legitimacy of the charity to ensure your donations are used appropriately.
 
+## Why do this?
+- Blockchain technology enables provably transparent charitable donations and fundraising by recording every transaction on a public, immutable ledger. When mining cryptocurrencies like Ethereum Classic (ETC) and donating the rewards to a charity, each transaction—from the mining reward to the donation—is permanently recorded on the blockchain. This transparency allows anyone to verify the flow of funds, ensuring that donations reach their intended recipients without interference or misappropriation. Donors and stakeholders can track the donations in real-time, fostering trust and accountability. The decentralized nature of blockchain eliminates the need for intermediaries, reducing overhead costs and increasing the efficiency of charitable contributions. By leveraging blockchain's inherent transparency, charitable organizations can enhance credibility and donors can have confidence that their contributions are making a genuine impact.
+
+
 ## License
 This script is provided "as is" without warranty of any kind. Use it at your own risk. The author is not responsible for any losses or damages resulting from the use of this script.
 
