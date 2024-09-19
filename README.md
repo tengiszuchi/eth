@@ -286,5 +286,5 @@ Graceful Shutdown: Handles KeyboardInterrupt to terminate the mining process whe
 License
 This script is provided "as is" without warranty of any kind. Use it at your own risk. The author is not responsible for any losses or damages resulting from the use of this script.
 
-Author
-[Your Name or GitHub Username]
+### Author
+Tengis Zuchi
