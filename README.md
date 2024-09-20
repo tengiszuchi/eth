@@ -89,7 +89,7 @@ The script checks the wallet balance and attempts to send donations every hour. 
 
 
 ## License
-This script is provided "as is" without warranty of any kind. Use it at your own risk. The author is not responsible for any losses or damages resulting from the use of this script.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ### Author
 [Tengis Zuchi](https://github.com/tengiszuchi)
