@@ -6,7 +6,7 @@ This Python program automates the process of:
 - Automatically donating mined ETC to a specified charity wallet address.
 
 ## Overview
-This script is designed for individuals who wish to mine Ethereum Classic (ETC) and automatically donate the mined coins to a charitable cause. It simplifies the setup by handling wallet creation, mining initiation, and the transfer of funds to the charity's wallet.
+This program is designed for individuals who wish to mine Ethereum Classic (ETC) and automatically donate the mined coins to a charitable cause. It simplifies the setup by handling wallet creation, mining initiation, and the transfer of funds to the charity's wallet.
 
 ## How It Works
 - Wallet Creation: Generates a new Ethereum Classic wallet using the eth_account library. The wallet's address and private key are created programmatically.
@@ -37,37 +37,37 @@ Before running the script, you need to replace placeholder values with actual da
 - Mining Pool URL:
 Locate the following line in the script:
 
-```mining_pool_url = 'stratum+tcp://your.miningpool.url:port'```
+    - ```mining_pool_url = 'stratum+tcp://your.miningpool.url:port'```
 Replace 'stratum+tcp://your.miningpool.url:port' with the URL and port of your chosen Ethereum Classic mining pool.
 - Worker Name (Optional):
   
-```worker_name = 'worker1'```
+    - ```worker_name = 'worker1'```
 You can change 'worker1' to any name you prefer for identifying your mining worker.
 - Charity Wallet Address:
   
-```charity_address = '0xYourCharityWalletAddress'```
+    - ```charity_address = '0xYourCharityWalletAddress'```
 Replace '0xYourCharityWalletAddress' with the actual Ethereum Classic (ETC) address of the charity to which you want to donate.
 Ensure that the address is valid and intended for ETC, not ETH.
 - RPC Endpoint (Optional):
   
-```web3 = Web3(Web3.HTTPProvider('https://www.etcblockexplorer.com/api/eth_rpc'))```
+    - ```web3 = Web3(Web3.HTTPProvider('https://www.etcblockexplorer.com/api/eth_rpc'))```
 The script uses a public ETC RPC endpoint. You can replace it with another reliable RPC provider if needed.
 - Gas Price and Gas Limit (Optional):
   
-```'gas': 21000,```
+    - ```'gas': 21000,```
 
-```'gasPrice': web3.toWei('0.00000002', 'ether'),```
+    - ```'gasPrice': web3.toWei('0.00000002', 'ether'),```
 Adjust the gasPrice according to the current network conditions. A higher gas price can result in faster transaction confirmations but will cost more.
 - Donation Check Interval (Optional):
 
-```time.sleep(3600)  # Sleep for 1 hour```
+    - ```time.sleep(3600)  # Sleep for 1 hour```
 The script checks the wallet balance and attempts to send donations every hour. You can adjust the interval by changing the number of seconds in time.sleep().
 
 ## Running the program
 - Ensure All Prerequisites Are Met:
 - Run the Script:
   
-```python main.py```
+    - ```python main.py```
 - Monitor the Output:
     - The script will display the new wallet's address and private key (keep the private key secure and do not share it).
     - It will start the mining process and display the mining process ID (PID).
@@ -93,7 +93,7 @@ The script checks the wallet balance and attempts to send donations every hour. 
 - Verify the legitimacy of the charity to ensure your donations are used appropriately.
 
 ## Why do this?
-- Blockchain technology enables provably transparent charitable donations and fundraising by recording every transaction on a public, immutable ledger. When mining cryptocurrencies like Ethereum Classic (ETC) and donating the rewards to a charity, each transaction—from the mining reward to the donation—is permanently recorded on the blockchain. This transparency allows anyone to verify the flow of funds, ensuring that donations reach their intended recipients without interference or misappropriation. Donors and stakeholders can track the donations in real-time, fostering trust and accountability. The decentralized nature of blockchain eliminates the need for intermediaries, reducing overhead costs and increasing the efficiency of charitable contributions. By leveraging blockchain's inherent transparency, charitable organizations can enhance credibility and donors can have confidence that their contributions are making a genuine impact.
+Blockchain technology enables provably transparent charitable donations and fundraising by recording every transaction on a public, immutable ledger. When mining cryptocurrencies like Ethereum Classic (ETC) and donating the rewards to a charity, each transaction—from the mining reward to the donation—is permanently recorded on the blockchain. This transparency allows anyone to verify the flow of funds, ensuring that donations reach their intended recipients without interference or misappropriation. Donors and stakeholders can track the donations in real-time, fostering trust and accountability. The decentralized nature of blockchain eliminates the need for intermediaries, reducing overhead costs and increasing the efficiency of charitable contributions. By leveraging blockchain's inherent transparency, charitable organizations can enhance credibility and donors can have confidence that their contributions are making a genuine impact.
 
 
 ## License
